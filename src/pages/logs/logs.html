@@ -1,0 +1,31 @@
+<ion-content class="background">
+  <div class="headerColor">
+    <div class="noHover">
+      <button ion-button clear>Not Reminder</button>
+    </div>
+    <div class="hasHover">
+      <button ion-button clear class="buttonHover" (click)= "goDelete()">Posts</button>
+      <button ion-button clear class="buttonHover" (click)= "goAbout()">About</button>
+    </div>
+  </div>
+
+  <div class="textArea">
+    <ion-input [(ngModel)]="post" type="text" class="inputLog"></ion-input>
+    <button (click)= "writeLog()">Create Post</button>
+  </div>
+
+  <h1>Logs</h1>
+  <div class="postLogs">
+    <div *ngFor= "let log of logs" class="logsPost">
+      <ion-card class="logCard">
+        <div class="info" [style.background-color]="log.color">
+          {{log.info}}
+        </div>
+        <div class="info">
+          <p>{{log.remarks}} '{{log.text}}'</p>
+        </div>
+      </ion-card>
+    </div>
+  </div>
+
+</ion-content>

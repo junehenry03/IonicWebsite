@@ -1,0 +1,107 @@
+page-delete {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Century Gothic'
+    }
+
+    .background {
+        background-color: #03a1d1;
+    }
+
+    .headerColor {
+        background-color: #00c3ff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerColor button {
+        font-size: 15px;
+        padding: 20px;
+        color: #ffffff;
+    }
+
+    .buttonHover:hover {
+        background-color: #ffffff !important;
+        color: #00c3ff;
+    }
+    
+    .postLogs {
+        display: flex;
+        
+    }
+
+    .posts {
+        position: relative;
+        margin: 10px;
+        padding: 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cnt{
+        color: #FFFFFF;
+        position: relative;
+        z-index: 100;
+        display: flex;
+    }
+    
+    .bg{
+        color: #000000 !important;
+        position: absolute;
+        z-index: -100;
+        height: 200px;
+        width: 300px;
+        background: #1644ad;
+    }
+
+    .posts:hover {
+        .markButton {
+            background: #ff9f00;
+            opacity: .8;
+        }
+
+        .deleteButton{
+            background: #ff0000;
+            opacity: .3;
+        }
+
+        .markButton:hover {
+            opacity: 1;
+
+            p:after {
+                content: "Mark as Done";
+                background: #1644ad !important;
+                color: #ffffff;
+                padding: 5px;
+            }
+        }
+
+        .deleteButton:hover {
+            opacity: 1;
+
+            p:after {
+                content: "Remove this Post";
+                background: #1644ad !important;
+                color: #ffffff;
+                padding: 5px;
+            }
+        }
+    }
+
+    .markButton {
+        margin: 0px;
+        padding: 0px;
+        height: 200px;
+        width: 150px;
+    }
+
+    .deleteButton {
+        margin: 0px;
+        padding: 0px;
+        height: 200px;
+        width: 150px;
+    }
+}

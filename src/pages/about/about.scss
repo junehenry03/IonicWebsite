@@ -1,0 +1,40 @@
+page-about {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Century Gothic'
+    }
+
+    .background {
+        background-color: #03a1d1;
+    }
+
+    .headerColor {
+        background-color: #00c3ff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerColor button {
+        font-size: 15px;
+        padding: 20px;
+        color: #ffffff;
+    }
+
+    .buttonHover:hover {
+        background-color: #ffffff !important;
+        color: #00c3ff;
+    } 
+
+    .body {
+        background-color: #ffffff !important;
+        color: #000000;
+        margin: 10px 200px;
+        padding: 20px;
+    }
+
+    .cont {
+        margin: 20px;
+    }
+}

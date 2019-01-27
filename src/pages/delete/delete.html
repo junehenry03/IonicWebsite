@@ -1,0 +1,31 @@
+<ion-content class="background">
+    <div class="headerColor">
+      <div class="noHover">
+        <button ion-button clear (click)= "goLogs()">Not Reminder</button>
+      </div>
+      <div class="hasHover">
+        <button ion-button clear class="buttonHover">Posts</button>
+        <button ion-button clear class="buttonHover" (click)= "goAbout()">About</button>
+      </div>
+    </div>
+
+    <div class="postLogs">
+      <div *ngFor= "let trueLog of trueLogs" class="logsPost">
+        <div class="posts">
+          <div class="bg">
+            <p>{{trueLog.text}}</p>
+          </div>
+          <div class="cnt">
+            <button ion-button clear class="markButton" (click)= "markPost(trueLog.id)">
+              <p></p>
+            </button>
+            <button ion-button clear class="deleteButton" (click)= "deletePost(trueLog.id)">
+              <p></p>
+            </button>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+  
